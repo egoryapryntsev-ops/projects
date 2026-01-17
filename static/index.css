@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+}
+
+header {
+    background: rgb(219, 219, 219);
+}
+
+main {
+    margin-top: 5vh;
+    margin-bottom: 20vh;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+@media screen and (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 766px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .container {
+        max-width: 90%;
+    }
+}
