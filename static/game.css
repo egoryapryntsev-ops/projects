@@ -1,0 +1,89 @@
+img.main {
+  display: block;
+  width: 100%;
+}
+
+.title {
+  margin: 3rem 0;
+}
+
+.title h1 {
+  padding: 0;
+  margin: 0;
+
+  margin: 1rem 0;
+}
+
+.param-name {
+  opacity: 0.6;
+}
+
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 3rem 0;
+}
+
+.gallery {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  overflow: hidden;
+
+  position: relative;
+}
+
+.gallery > img {
+  display: block;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: center;
+  object-position: center;
+
+  width: 100%;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  z-index: 0;
+}
+
+.gallery > img.active {
+  z-index: 1;
+}
+
+.feedback-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.feedbacks {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.feedback .header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.feedback .avatar {
+  aspect-ratio: 1 / 1;
+  width: 2rem;
+  background-color: rgb(219, 219, 219);
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 991px) {
+  .feedback-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
