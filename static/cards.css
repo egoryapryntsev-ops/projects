@@ -1,27 +1,28 @@
 .cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 }
 
 .cards > .card {
-    aspect-ratio: 2 / 3;
+  aspect-ratio: 2 / 3;
 }
 
 .cards > .card img {
-    display: block;
-    height: 100%;
-    border-radius: .5rem;
+  display: block;
+  width: 100%;
+
+  border-radius: 0.5rem;
 }
 
 @media screen and (min-width: 576px) and (max-width: 991px) {
-    .cards {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-width: 575px) {
-    .cards {
-        grid-template-columns: repeat(1, 1fr);
-    }
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
